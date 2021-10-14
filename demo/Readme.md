@@ -35,6 +35,11 @@ View :
 <img width="621" alt="viewDetail" src="https://user-images.githubusercontent.com/72613060/137346240-b1e26bbc-821d-44ab-b08c-164479e39cbb.png">
 <img width="605" alt="form" src="https://user-images.githubusercontent.com/72613060/137346250-ae43163e-1234-4438-9f47-6475a87c3156.png">
 
+Exception :
+
+<img width="592" alt="ex" src="https://user-images.githubusercontent.com/72613060/137348342-7794892f-cf83-48b6-b8b3-4a22808cff04.png">
+
+
 Kết quả :
 
 ADD :
@@ -62,11 +67,14 @@ Delete Xóa id 1 :
 Tìm Kiếm :
 
 Ở Đây e có làm theo 2 cách :
-Cách 1 : em sủ dụng Param ở trang home :
+Cách 1 : em sủ dụng RequestParam ở trang home :
 <img width="627" alt="timkiem" src="https://user-images.githubusercontent.com/72613060/137346728-b2df07d5-4042-4342-aa57-f679c570ae01.png">
 <img width="526" alt="searchParam" src="https://user-images.githubusercontent.com/72613060/137347284-5f08a523-df18-48f2-bd1d-219eec4ada1a.png">
 
-Cách 2 : em sử dụng HTTP POST view trả 1 searchRequest trong modalAttr xong lấy searchRequest làm key gọi hàm ở tầng dưới lên xử lý ở href : search :
+Cách 2 : em sử dụng HTTP POST view trả 1 searchRequest trong modalAttr xong lấy searchRequest làm key gọi hàm ở tầng dưới lên xử lý ở href : /search :
+
+
+<img width="330" alt="searchRequest" src="https://user-images.githubusercontent.com/72613060/137348214-67bab7e2-10bd-457e-bc77-f56b4a38be67.png">
 
 
 <img width="526" alt="searchParam" src="https://user-images.githubusercontent.com/72613060/137347157-590951a6-060e-4b7c-be5c-46710bb9b150.png">
