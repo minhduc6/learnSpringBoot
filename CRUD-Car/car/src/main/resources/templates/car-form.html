@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Store</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container" style="width: 600px; margin: 0 auto">
+      <div>
+        <h2>Car Book | [[${pageTitle}]]</h2>
+      </div>
+      <form th:action="@{/car/save}" method="POST" th:object="${car}">
+        <input type="hidden" th:field="*{id}" />
+        <div class="form-group">
+          <label>Photo</label>
+          <input
+            type="text"
+            th:field="*{photo}"
+            class="form-control"
+            id="title"
+          />
+        </div>
+        <div class="form-group">
+          <label>Model</label>
+          <input
+            type="text"
+            th:field="*{model}"
+            class="form-control"
+            id="model"
+          />
+        </div>
+        <div class="form-group">
+          <label>Manufacturer</label>
+          <input
+            type="text"
+            th:field="*{manufacturer}"
+            class="form-control"
+            id="manufacturer"
+          />
+        </div>
+        <div class="form-group">
+          <label>Price</label>
+          <input
+            type="text"
+            th:field="*{price}"
+            class="form-control"
+            id="price"
+          />
+        </div>
+        <div class="form-group">
+          <label>Sales</label>
+          <input
+            type="text"
+            th:field="*{sales}"
+            class="form-control"
+            id="sales"
+          />
+        </div>
+        <div class="text-center">
+          <input type="submit" class="btn btn-primary m-3" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

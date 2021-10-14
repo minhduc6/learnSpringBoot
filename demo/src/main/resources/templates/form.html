@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Employee</title>
+</head>
+<body>
+  <form action="#" th:action="@{/employee/save}" th:object="${employee}" method="post"
+          novalidate="novalidate">
+      <input type="hidden" placeholder="id" th:field="*{id}"/><br><br>
+      <input type="text" placeholder="First Name" th:field="*{firstName}"/><br><br>
+      <input type="text" placeholder="Last Name" th:field="*{lastName}"/><br><br>
+      <input type="text" placeholder="Email Id" th:field="*{emailId}"/><br><br>
+      <input type="text" placeholder="Passport Number" th:field="*{passportNumber}"/><br><br>
+      <button type="submit">Save</button>
+  </form>
+</body>
+</html>

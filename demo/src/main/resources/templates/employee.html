@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Detail Employee</title>
+</head>
+<body>
+    <a href="/listEmployee/">Trang đầu</a>&nbsp;&nbsp;
+    <a href="/employee/add">Thêm mới</a><br>
+    <a href="/search">Tim Kiem</a><br>
+    <form  th:action="@{/employee/delete}" th:object="${employee}" method="post" novalidate="novalidate">
+    <input type="hidden" th:field="*{id}"/>
+    <a th:href="@{/employee/{id}(id=${employee.id})}"><strong th:text="${employee.firstName}"> &nbsp; </strong>&nbsp;&nbsp;<strong th:text="${employee.lastName}"></strong></a><br>
+    <p>Email :</p>
+    <p th:text="${employee.emailId}"></p>
+    <p>PassportNumber :</p>
+    <p th:text="${employee.passportNumber}"></p>
+    <a th:href="@{/employee/edit/{id}(id=${employee.id})}">Edit employee</a>&nbsp;&nbsp;
+    <button type="submit">Delete</button>
+    </form>
+</body>
+</html>

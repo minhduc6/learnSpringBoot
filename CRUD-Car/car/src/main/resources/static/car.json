@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "model": "Fadil",
+    "manufacturer": "vinfast",
+    "price": 300,
+    "sales": 100,
+    "photo": "1.png"
+  },
+  {
+    "id": 2,
+    "model": "Camry",
+    "manufacturer": "Toyota",
+    "price": 400,
+    "sales": 100,
+    "photo": "2.png"
+  },
+  {
+    "id": 3,
+    "model": "CX5",
+    "manufacturer": "Mazda",
+    "price": 250,
+    "sales": 100,
+    "photo": "3.png"
+  },
+  {
+    "id": 4,
+    "model": "S450",
+    "manufacturer": "Mercedes",
+    "price": 550,
+    "sales": 100,
+    "photo": "4.png"
+  },
+  {
+    "id": 5,
+    "model": "C300",
+    "manufacturer": "Mercedes",
+    "price": 1000,
+    "sales": 100,
+    "photo": "5.png"
+  }
+]
