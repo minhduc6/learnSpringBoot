@@ -66,7 +66,7 @@ Cách 1 : em sủ dụng Param ở trang home :
 <img width="627" alt="timkiem" src="https://user-images.githubusercontent.com/72613060/137346728-b2df07d5-4042-4342-aa57-f679c570ae01.png">
 <img width="526" alt="searchParam" src="https://user-images.githubusercontent.com/72613060/137347284-5f08a523-df18-48f2-bd1d-219eec4ada1a.png">
 
-Cách 2 : em sử dụng view trả 1 searchRequest trong modalAttr xong lấy searchRequest làm key gọi hàm ở tầng dưới lên xử lý ở href : search :
+Cách 2 : em sử dụng HTTP POST view trả 1 searchRequest trong modalAttr xong lấy searchRequest làm key gọi hàm ở tầng dưới lên xử lý ở href : search :
 
 
 <img width="526" alt="searchParam" src="https://user-images.githubusercontent.com/72613060/137347157-590951a6-060e-4b7c-be5c-46710bb9b150.png">
