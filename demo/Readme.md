@@ -14,11 +14,10 @@ Bước 3 Tạo Entity Employee :
 Tầng Repo :
 
 <img width="395" alt="Tang Repo" src="https://user-images.githubusercontent.com/72613060/137345797-5b771a2c-f683-4fe8-a1a6-ce5c84a6aba0.png">
-
+<img width="368" alt="updateLast" src="https://user-images.githubusercontent.com/72613060/137595154-d0d53868-4628-4802-b235-88487ef65c30.png">
 <img width="403" alt="add" src="https://user-images.githubusercontent.com/72613060/137345849-1afd1648-66f4-4c01-a259-8cd10fbfc32d.png">
 <img width="371" alt="get" src="https://user-images.githubusercontent.com/72613060/137345870-56cc7ec8-03d4-4b9e-bc05-161fcd65f5ae.png">
 <img width="454" alt="update" src="https://user-images.githubusercontent.com/72613060/137345885-76864f7a-fb9f-471a-ab54-984f1b04fcb4.png">
-<img width="374" alt="delete" src="https://user-images.githubusercontent.com/72613060/137345914-058c5695-4b53-4f7f-af9a-4eb9cd0ee75f.png">
 <img width="389" alt="search" src="https://user-images.githubusercontent.com/72613060/137345975-fd5dfe91-8378-413b-92e1-d23b26b6fd0e.png">
 
 Tầng Controller :
@@ -68,7 +67,9 @@ Tìm Kiếm :
 
 Ở Đây e có làm theo 2 cách :
 Cách 1 : em sủ dụng RequestParam ở trang home :
+
 <img width="627" alt="timkiem" src="https://user-images.githubusercontent.com/72613060/137346728-b2df07d5-4042-4342-aa57-f679c570ae01.png">
+
 <img width="526" alt="searchParam" src="https://user-images.githubusercontent.com/72613060/137347284-5f08a523-df18-48f2-bd1d-219eec4ada1a.png">
 
 Cách 2 : em sử dụng HTTP POST view trả 1 searchRequest trong modalAttr xong lấy searchRequest làm key gọi hàm ở tầng dưới lên xử lý ở href : /search :
@@ -82,4 +83,36 @@ Cách 2 : em sử dụng HTTP POST view trả 1 searchRequest trong modalAttr xo
 <img width="223" alt="searchPost" src="https://user-images.githubusercontent.com/72613060/137347303-392ca5b9-b19a-4bb3-ad34-47139243c134.png">
 
 <img width="401" alt="searchPost1" src="https://user-images.githubusercontent.com/72613060/137347317-254ab6f5-a736-46b4-9915-1342ed6c2e78.png">
+
+Buổi 2 : 
+
+Em sử dụng base-layout gồm navbar,content ,optional,footer như hướng dẫn trên lớp
+ở đây em có sử dụng bootstrap
+
+Trang Home:
+
+<img width="958" alt="pageHome" src="https://user-images.githubusercontent.com/72613060/137595283-196e1b4b-144b-4caf-b2a6-32bdf593ba46.png">
+
+Trang Form add :
+
+<img width="920" alt="formAdd" src="https://user-images.githubusercontent.com/72613060/137595295-03c39072-ef8b-427c-9d42-a1bf1d2e0c68.png">
+
+Trang Form edit :
+
+<img width="941" alt="formEdit" src="https://user-images.githubusercontent.com/72613060/137595303-31f14833-2235-433c-8499-646d59942382.png">
+
+Trang View Detail :
+
+
+<img width="956" alt="viewDetail1" src="https://user-images.githubusercontent.com/72613060/137595317-316bf3af-dde7-4e76-9fe0-ffbc7ebf1f2f.png">
+
+Trang tìm kiếm :
+
+<img width="956" alt="timkiemResult" src="https://user-images.githubusercontent.com/72613060/137595323-0e73fc2e-7699-4a05-9337-67b31e2dd067.png">
+
+Các Chức năng CRUD tìm kiếm vẫn được xử lý như buổi trước ạ
+
+
+
+
 
