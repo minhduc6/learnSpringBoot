@@ -86,7 +86,7 @@ Cách 2 : em sử dụng HTTP POST view trả 1 searchRequest trong modalAttr xo
 
 Buổi 2 : 
 
-Em sử dụng base-layout gồm navbar,content ,optional,footer như hướng dẫn trên lớp
+Em sử dụng thymeleaf layout dialect base-layout gồm navbar,content ,optional,footer như hướng dẫn trên lớp
 ở đây em có sử dụng bootstrap
 
 Trang Home:
