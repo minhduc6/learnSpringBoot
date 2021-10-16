@@ -48,7 +48,7 @@ public class EmployeeRepoImple implements EmployeeRepository {
     @Override
     public void addEmployee(Employee e) {
         Employee newEmployee = new Employee();
-        newEmployee.setId(emList.size()+1);
+        newEmployee.setId(emList.size() + 1);
         newEmployee.setFirstName(e.getFirstName());
         newEmployee.setLastName(e.getLastName());
         newEmployee.setEmailId(e.getEmailId());
@@ -89,11 +89,11 @@ public class EmployeeRepoImple implements EmployeeRepository {
 
     @Override
     public Employee deleteById(int id) {
-        for (int i = 0; i < emList.size(); i++) {
+        for (int i = 0; i < emList.size() ; i++) {
             if(emList.get(i).getId() == id)
             {
-                emList.remove(i);
-                return emList.get(i);
+               Employee e = emList.remove(i);
+               return e;
             }
         }
         throw new NotFoundException("Khong co Employee");

@@ -45,6 +45,7 @@ public class EmployeeController {
     @GetMapping("/employee/add")
     public String add(Model model) {
     model.addAttribute("employee", new Employee()); 
+    model.addAttribute("pageTitle", "Add Employee");
     return "form";
     }
 
@@ -52,6 +53,7 @@ public class EmployeeController {
     public String editBookId(@PathVariable("id") int id, Model model) {    
     Employee employee = employeeRepository.getEmployee(id);
     model.addAttribute("employee", employee);
+    model.addAttribute("pageTitle", "Edit Employee");
     return "form";
 }
 
