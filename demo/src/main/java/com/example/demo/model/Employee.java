@@ -28,7 +28,7 @@ public class Employee {
         this.passportNumber = passportNumber;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
