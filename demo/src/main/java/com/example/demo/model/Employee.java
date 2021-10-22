@@ -2,9 +2,8 @@ package com.example.demo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import org.springframework.stereotype.Component;
 
-@Component
+
 public class Employee {
      
     @JsonIgnore
@@ -21,7 +20,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(Integer id, String firstName, String lastName, String emailId, String passportNumber) {
+    public Employee(int id, String firstName, String lastName, String emailId, String passportNumber) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -33,7 +32,7 @@ public class Employee {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
