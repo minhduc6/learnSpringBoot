@@ -39,31 +39,8 @@ Exception :
 <img width="592" alt="ex" src="https://user-images.githubusercontent.com/72613060/137348342-7794892f-cf83-48b6-b8b3-4a22808cff04.png">
 
 
-Kết quả :
-
-ADD :
 
 
-
-<img width="359" alt="addResult" src="https://user-images.githubusercontent.com/72613060/137346319-1979d62d-e130-4191-869e-65afdab7a53c.png">
-<img width="261" alt="addResult1" src="https://user-images.githubusercontent.com/72613060/137346341-28b124d4-2d27-4fe3-bc5c-3f0528574044.png">
-
-Update :
-
-
-
-<img width="204" alt="updateResult" src="https://user-images.githubusercontent.com/72613060/137346404-6e948ea7-3fee-4765-936a-c7c8fc25f929.png">
-<img width="233" alt="updateResult1" src="https://user-images.githubusercontent.com/72613060/137346413-67430067-800c-44d7-9b94-3ed15f9ce291.png">
-
-Delete Xóa id 1 :
-
-
-
-
-<img width="206" alt="deleteResult" src="https://user-images.githubusercontent.com/72613060/137346477-2d34bed1-fd6b-4d77-9a92-d7a813a803ee.png">
-<img width="521" alt="deleteResult1" src="https://user-images.githubusercontent.com/72613060/137346525-08438f8d-4a64-4193-bb48-836f9d6dff17.png">
-
-Tìm Kiếm :
 
 Ở Đây e có làm theo 2 cách :
 Cách 1 : em sủ dụng RequestParam ở trang home :
