@@ -55,7 +55,7 @@ Cách 2 : em sử dụng HTTP POST view trả 1 searchRequest trong modalAttr xo
 <img width="330" alt="searchRequest" src="https://user-images.githubusercontent.com/72613060/137348214-67bab7e2-10bd-457e-bc77-f56b4a38be67.png">
 
 
-<img width="526" alt="searchParam" src="https://user-images.githubusercontent.com/72613060/137347157-590951a6-060e-4b7c-be5c-46710bb9b150.png">
+
 
 
 Buổi 2 : 
