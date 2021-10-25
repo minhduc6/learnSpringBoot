@@ -16,10 +16,11 @@
                 <div class="col-md-12">
                     <form  th:action="@{/employee/delete}" th:object="${employee}" method="POST" novalidate="novalidate">
                         <input type="hidden" th:field="*{id}"/>
-                        <table class="table table-striped table-hover">
+                        <table class="table table-striped table-hover" style="text-align: center;">
                             <thead>
                                 <tr>
                                     <th>Id</th>
+                                    <th>Photo</th>
                                     <th>First Name</th>
                                     <th>Last Name</th>
                                     <th>Email</th>						
@@ -30,6 +31,10 @@
                             <tbody>
                                 <tr>
                                     <td th:text="${employee.id}"></td>
+                                    <td><img
+                                        th:src="${employee.getPhotoImagePath}"
+                                        style="width: 140px; height: 120px"
+                                      /></td>
                                     <td th:text="${employee.firstName}"></td>
                                     <td th:text="${employee.lastName}"></td>
                                     <td th:text="${employee.emailId}"></td>   

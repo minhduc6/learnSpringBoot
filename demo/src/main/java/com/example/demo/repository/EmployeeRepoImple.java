@@ -53,6 +53,7 @@ public class EmployeeRepoImple implements EmployeeRepository {
         newEmployee.setLastName(e.getLastName());
         newEmployee.setEmailId(e.getEmailId());
         newEmployee.setPassportNumber(e.getPassportNumber());
+        newEmployee.setPhoto(e.getPhoto());
         emList.add(newEmployee); 
     }
 
@@ -77,10 +78,12 @@ public class EmployeeRepoImple implements EmployeeRepository {
         for (int i = 0; i < emList.size(); i++) {
             if(emList.get(i).getId() == id)
             {
-                emList.get(i).setLastName(e.getLastName());
+                emList.get(i).setFirstName(e.getFirstName());
                 emList.get(i).setLastName(e.getLastName());
                 emList.get(i).setEmailId(e.getEmailId());
                 emList.get(i).setPassportNumber(e.getPassportNumber());
+                emList.get(i).setPhoto(e.getPhoto());
+
                 return emList.get(i);
             }
         }

@@ -1,12 +1,15 @@
 package com.example.demo.controller;
 
+import java.io.IOException;
 import java.util.List;
 
+import javax.validation.Valid;
 
 import com.example.demo.model.Employee;
 import com.example.demo.repository.EmployeeRepository;
 import com.example.demo.request.DeleteRequest;
 import com.example.demo.request.SearchRequest;
+import com.example.demo.service.FileUpload;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,6 +20,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
+
+
+
+import org.springframework.util.StringUtils;
 
 
 
@@ -26,11 +34,14 @@ public class EmployeeController {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+   
+
     @GetMapping("/listEmployee")
     public String viewAll(Model model)
     { 
         List<Employee> employees = employeeRepository.getAll();
         model.addAttribute("employees", employees);
+        model.addAttribute("pageTitle", "Home");
         return "listEmployee";
     }
     
@@ -58,17 +69,43 @@ public class EmployeeController {
 }
 
     @PostMapping("/employee/save") 
-    public String save(Employee employee, BindingResult result) {
+    public String save(@Valid @ModelAttribute("employee") Employee employee, BindingResult result , @RequestParam("image") MultipartFile multipartFile) throws IOException {
     int id = employee.getId();
-    if (result.hasErrors()) {
-         return "form";
-    }
-    if(id!= 0)
+    if(id !=  0)
     {
+        if (!multipartFile.isEmpty()) {
+            String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
+            employee.setPhoto(fileName);
+            String uploadDir = "employee-photo" ;
+            FileUpload.saveFile(uploadDir, fileName, multipartFile);
+        }
+        else
+        {
+            Employee e = employeeRepository.getEmployee(id);
+            employee.setPhoto(e.getPhoto());
+        }
+        if(result.hasErrors())
+        {
+             return "form";
+        }
         employeeRepository.updateByID(employee.getId(), employee);
-    }else if(id == 0)
+    } else if(id == 0)
     {
-        employeeRepository.addEmployee(employee);    
+        if (!multipartFile.isEmpty()) {
+            String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
+            employee.setPhoto(fileName);
+            String uploadDir = "employee-photo" ;
+            FileUpload.saveFile(uploadDir, fileName, multipartFile);
+        }
+        else
+        {
+            employee.setPhoto("default.jpg");
+        }
+        if(result.hasErrors())
+        {
+             return "form";
+        }
+         employeeRepository.addEmployee(employee);  
     }
     return "redirect:/listEmployee"; 
 }
@@ -84,6 +121,7 @@ public class EmployeeController {
    @GetMapping("/search")
    public String searchForm(Model model) { 
    model.addAttribute("searchrequest", new SearchRequest());   
+   model.addAttribute("pageTitle", "Search Employee");
    return "search";
    }
 

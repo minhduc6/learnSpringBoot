@@ -14,11 +14,10 @@ Bước 3 Tạo Entity Employee :
 Tầng Repo :
 
 <img width="395" alt="Tang Repo" src="https://user-images.githubusercontent.com/72613060/137345797-5b771a2c-f683-4fe8-a1a6-ce5c84a6aba0.png">
-
+<img width="368" alt="updateLast" src="https://user-images.githubusercontent.com/72613060/137595154-d0d53868-4628-4802-b235-88487ef65c30.png">
 <img width="403" alt="add" src="https://user-images.githubusercontent.com/72613060/137345849-1afd1648-66f4-4c01-a259-8cd10fbfc32d.png">
 <img width="371" alt="get" src="https://user-images.githubusercontent.com/72613060/137345870-56cc7ec8-03d4-4b9e-bc05-161fcd65f5ae.png">
 <img width="454" alt="update" src="https://user-images.githubusercontent.com/72613060/137345885-76864f7a-fb9f-471a-ab54-984f1b04fcb4.png">
-<img width="374" alt="delete" src="https://user-images.githubusercontent.com/72613060/137345914-058c5695-4b53-4f7f-af9a-4eb9cd0ee75f.png">
 <img width="389" alt="search" src="https://user-images.githubusercontent.com/72613060/137345975-fd5dfe91-8378-413b-92e1-d23b26b6fd0e.png">
 
 Tầng Controller :
@@ -40,35 +39,14 @@ Exception :
 <img width="592" alt="ex" src="https://user-images.githubusercontent.com/72613060/137348342-7794892f-cf83-48b6-b8b3-4a22808cff04.png">
 
 
-Kết quả :
-
-ADD :
 
 
-
-<img width="359" alt="addResult" src="https://user-images.githubusercontent.com/72613060/137346319-1979d62d-e130-4191-869e-65afdab7a53c.png">
-<img width="261" alt="addResult1" src="https://user-images.githubusercontent.com/72613060/137346341-28b124d4-2d27-4fe3-bc5c-3f0528574044.png">
-
-Update :
-
-
-
-<img width="204" alt="updateResult" src="https://user-images.githubusercontent.com/72613060/137346404-6e948ea7-3fee-4765-936a-c7c8fc25f929.png">
-<img width="233" alt="updateResult1" src="https://user-images.githubusercontent.com/72613060/137346413-67430067-800c-44d7-9b94-3ed15f9ce291.png">
-
-Delete Xóa id 1 :
-
-
-
-
-<img width="206" alt="deleteResult" src="https://user-images.githubusercontent.com/72613060/137346477-2d34bed1-fd6b-4d77-9a92-d7a813a803ee.png">
-<img width="521" alt="deleteResult1" src="https://user-images.githubusercontent.com/72613060/137346525-08438f8d-4a64-4193-bb48-836f9d6dff17.png">
-
-Tìm Kiếm :
 
 Ở Đây e có làm theo 2 cách :
 Cách 1 : em sủ dụng RequestParam ở trang home :
+
 <img width="627" alt="timkiem" src="https://user-images.githubusercontent.com/72613060/137346728-b2df07d5-4042-4342-aa57-f679c570ae01.png">
+
 <img width="526" alt="searchParam" src="https://user-images.githubusercontent.com/72613060/137347284-5f08a523-df18-48f2-bd1d-219eec4ada1a.png">
 
 Cách 2 : em sử dụng HTTP POST view trả 1 searchRequest trong modalAttr xong lấy searchRequest làm key gọi hàm ở tầng dưới lên xử lý ở href : /search :
@@ -77,9 +55,38 @@ Cách 2 : em sử dụng HTTP POST view trả 1 searchRequest trong modalAttr xo
 <img width="330" alt="searchRequest" src="https://user-images.githubusercontent.com/72613060/137348214-67bab7e2-10bd-457e-bc77-f56b4a38be67.png">
 
 
-<img width="526" alt="searchParam" src="https://user-images.githubusercontent.com/72613060/137347157-590951a6-060e-4b7c-be5c-46710bb9b150.png">
 
-<img width="223" alt="searchPost" src="https://user-images.githubusercontent.com/72613060/137347303-392ca5b9-b19a-4bb3-ad34-47139243c134.png">
 
-<img width="401" alt="searchPost1" src="https://user-images.githubusercontent.com/72613060/137347317-254ab6f5-a736-46b4-9915-1342ed6c2e78.png">
+
+Buổi 2 : 
+
+Em sử dụng thymeleaf layout dialect base-layout gồm navbar,content ,optional,footer như hướng dẫn trên lớp
+ở đây em có sử dụng bootstrap
+
+Trang Home:
+
+<img width="958" alt="pageHome" src="https://user-images.githubusercontent.com/72613060/137595283-196e1b4b-144b-4caf-b2a6-32bdf593ba46.png">
+
+Trang Form add :
+
+<img width="920" alt="formAdd" src="https://user-images.githubusercontent.com/72613060/137595295-03c39072-ef8b-427c-9d42-a1bf1d2e0c68.png">
+
+Trang Form edit :
+
+<img width="941" alt="formEdit" src="https://user-images.githubusercontent.com/72613060/137595303-31f14833-2235-433c-8499-646d59942382.png">
+
+Trang View Detail :
+
+
+<img width="956" alt="viewDetail1" src="https://user-images.githubusercontent.com/72613060/137595317-316bf3af-dde7-4e76-9fe0-ffbc7ebf1f2f.png">
+
+Trang tìm kiếm :
+
+<img width="956" alt="timkiemResult" src="https://user-images.githubusercontent.com/72613060/137595323-0e73fc2e-7699-4a05-9337-67b31e2dd067.png">
+
+Các Chức năng CRUD tìm kiếm vẫn được xử lý như buổi trước ạ
+
+
+
+
 

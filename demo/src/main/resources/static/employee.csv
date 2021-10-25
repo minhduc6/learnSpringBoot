@@ -1,6 +1,6 @@
-firstName,lastName,emailId,passportNumber
-Duong,DUC,duc@gmail.com,1234566789
-Thao,Duong,thao@gmail.com,987654321
-Tri,Nguyen,tri@gmail.com,8723324234
-Pham,Lan,lan@gmail.com,437247236432
-Duong,Chien,chien@gmail.com,231231232
+firstName,lastName,emailId,passportNumber,photo
+Duong,DUC,duc@gmail.com,1234566789,1.png
+Thao,Duong,thao@gmail.com,987654321,2.png
+Tri,Nguyen,tri@gmail.com,8723324234,3.png
+Pham,Lan,lan@gmail.com,437247236432,4.jpg
+Duong,Chien,chien@gmail.com,231231232,5.png

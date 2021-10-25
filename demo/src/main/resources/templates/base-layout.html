@@ -52,14 +52,14 @@ footer {
 
     <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" th:href="@{/listEmployee}">Trang Đầu</a>
+            <li class="nav-item active1">
+                <a class="nav-link" th:style="${pageTitle == 'Home' ? 'background: #212529;' : 'background: none;'}" th:href="@{/listEmployee}">Trang Đầu</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" th:href="@{/employee/add}">Thêm Mới</a>
+                <a class="nav-link" th:style="${pageTitle == 'Add Employee' ? 'background: #212529;' : 'background: none;'}"  th:href="@{/employee/add}">Thêm Mới</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/search}">Tìm Kiếm</a>
+            <li class="nav-item active3">
+                <a class="nav-link" th:style="${pageTitle == 'Search Employee' ? 'background: #212529;' : 'background: none;'}" th:href="@{/search}">Tìm Kiếm</a>
             </li>
         </ul>
     </div>
