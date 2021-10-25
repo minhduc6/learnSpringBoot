@@ -85,8 +85,27 @@ Trang tìm kiếm :
 <img width="956" alt="timkiemResult" src="https://user-images.githubusercontent.com/72613060/137595323-0e73fc2e-7699-4a05-9337-67b31e2dd067.png">
 
 Các Chức năng CRUD tìm kiếm vẫn được xử lý như buổi trước ạ
+Buổi 3 :
+Upload File :
+
+<img width="412" alt="fileup" src="https://user-images.githubusercontent.com/72613060/138644196-03d29f9d-459f-4927-9615-7dd36d15d8b5.png">
+
+config : 
+
+<img width="430" alt="fileconfig" src="https://user-images.githubusercontent.com/72613060/138644224-630510b1-1996-4378-bbf1-dbfe7d61c235.png">
+
+controller :
+
+<img width="677" alt="fileController" src="https://user-images.githubusercontent.com/72613060/138644253-b0ebde38-0d58-4502-87dc-24dce8e43721.png">
+
+Validate :
+
+<img width="313" alt="validation" src="https://user-images.githubusercontent.com/72613060/138644328-4cfffb8a-b84d-4c16-b0cc-d020d7897586.png">
 
 
+<img width="545" alt="viewValidate" src="https://user-images.githubusercontent.com/72613060/138644336-603d55d3-728d-468e-b53c-8c8242e563f6.png">
 
+Kết Quả
 
+<img width="647" alt="validateResult" src="https://user-images.githubusercontent.com/72613060/138644353-7df68fa9-336c-47bd-80fb-bd84f3af939b.png">
 
