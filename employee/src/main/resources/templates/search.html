@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{base-layout}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .active{
+      background: red;
+    }
+</style>
+<body>
+    <div layout:fragment="content" style="margin-bottom: 200px;" >
+        <section class="my-5">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-md-12" > 
+                        <form    th:action="@{/employee/search}" method="post"
+          novalidate="novalidate" th:object="${searchrequest}" >
+         <input   type="text" th:field="*{keyword}" placeholder="type keyword here" /><br><br>
+         <button class="btn btn-outline-success" type="submit" style="color: #007BFF;">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

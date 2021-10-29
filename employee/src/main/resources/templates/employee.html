@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{base-layout}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Detail Employee</title>
+</head>
+<body>
+     
+  <div layout:fragment="content" style="margin-bottom: 200px;">
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form  th:action="@{/employee/delete}" th:object="${employee}" method="POST" novalidate="novalidate">
+                        <input type="hidden" th:field="*{id}"/>
+                        <table class="table table-striped table-hover" style="text-align: center;">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Photo</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email</th>						
+                                    <th>Passport Number</th>						
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td th:text="${employee.id}"></td>
+                                    <td th:if="${employee.image == null}"></td>
+                                    <td th:if="${employee.image != null}"><img  th:src="@{'data:image/jpeg;base64,'+${employee.generateBase64Image()}}"  style="width:100px;height:100px;"/></td>
+                                    <td th:text="${employee.firstName}"></td>
+                                    <td th:text="${employee.lastName}"></td>
+                                    <td th:text="${employee.emailId}"></td>   
+                                    <td th:text="${employee.passportNumber}"></td>
+                                    
+                                    <td>
+                                        <button type="button" class="btn btn-warning">
+                                            <a th:href="@{/employee/edit/{id}(id=${employee.id})}">Edit</a>
+                                        </button>
+                                        &nbsp;&nbsp;
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

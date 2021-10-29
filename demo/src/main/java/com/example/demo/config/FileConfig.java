@@ -26,7 +26,4 @@ public class FileConfig implements WebMvcConfigurer {
 		registry.addResourceHandler(logicalPath)
 			.addResourceLocations("file:/" + absolutePath + "/");		
 	}
-
-	
-
 }
