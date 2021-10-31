@@ -1,10 +1,10 @@
 package com.example.employee.service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.example.employee.entity.Employee;
+import com.example.employee.exception.ResourceNotFoundEx;
 import com.example.employee.repository.EmployeeRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,8 +20,8 @@ public class EmployeeServiceImp  implements EmployeeService{
     }
 
     @Override
-    public Optional<Employee> getEmployee(int id) {
-        return employeeRepo.findById(id);
+    public Employee getEmployee(int id) {
+        return employeeRepo.findById(id).orElseThrow(() -> new ResourceNotFoundEx("Not Found Employee " + id));
     }
 
     @Override

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{base-layout}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .active{
+      background: red;
+    }
+</style>
+<body>
+    <div layout:fragment="content" style="margin-bottom: 200px;" >
+        <section class="my-5">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-md-12" > 
+                        <h3 style="color: red;">Error</h3>
+                        <h3 style="color: red;" th:text = "${message}"></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
