@@ -26,7 +26,6 @@ public class CarControler {
               return "home";
        }
 
-
   @GetMapping("car/new")
   public String addBook(Model model)
   {
