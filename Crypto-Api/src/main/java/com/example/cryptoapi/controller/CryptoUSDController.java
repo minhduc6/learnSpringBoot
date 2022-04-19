@@ -122,6 +122,7 @@ public class CryptoUSDController {
         List<Double> price12Month = cryptoChart12Month.get12MonthPrice();
         model.addAttribute("timeArr12Month",time12Month);
         model.addAttribute("priceArr12Month",price12Month);
+        model.addAttribute("urlTienTe","listUsd");
         return "index";
     }
 }
