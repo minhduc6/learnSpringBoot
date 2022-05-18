@@ -11,7 +11,7 @@ public class CryptoChart {
 
     public List<Long> getTime(){
           List<Long> time = new ArrayList<>();
-          for (int i = 0 ; i < prices.length;i=i+7){
+          for (int i = 5 ; i < prices.length;i=i+5){
                time.add(prices[i][0]);
           }
           return  time;
@@ -19,7 +19,7 @@ public class CryptoChart {
 
     public  List<Double> getPrice(){
         List<Double> listPrice = new ArrayList<>();
-        for (int i = 0 ; i < prices.length;i=i+7){
+        for (int i = 5 ; i < prices.length;i=i+5){
             listPrice.add((double) prices[i][1]);
         }
         return  listPrice;
